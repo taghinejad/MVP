@@ -1,0 +1,695 @@
+{
+	"info": {
+		"_postman_id": "7835ff04-4d0f-44b9-89a0-4314ab8fc244",
+		"name": "https://ahmad8746.herokuapp.com/",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19411944"
+	},
+	"item": [
+		{
+			"name": "Vendor",
+			"item": [
+				{
+					"name": "product",
+					"item": [
+						{
+							"name": "get product list",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "Token b1c598c42cc8f1e63269f69ce526bf30655389c2",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\":420,\r\n    \"currency\":\"USD\",\r\n    \"date\":\"2021-06-17 22:01:00\",\r\n    \"description\":\" to test bank api\",\r\n    \"category\":3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ahmad8746.herokuapp.com/product/",
+									"protocol": "https",
+									"host": [
+										"ahmad8746",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"product",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add product",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "Token b3c806da1c3bfcc904947c92d3db0c1109f1efbe",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amountAvailable\": 5,\r\n    \"cost\": 20,\r\n    \"name\": \"iphone\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ahmad8746.herokuapp.com/product/",
+									"protocol": "https",
+									"host": [
+										"ahmad8746",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"product",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete product by id",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "Token b1c598c42cc8f1e63269f69ce526bf30655389c2",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\":420,\r\n    \"currency\":\"USD\",\r\n    \"date\":\"2021-06-17 22:01:00\",\r\n    \"description\":\" to test bank api\",\r\n    \"category\":3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ahmad8746.herokuapp.com/product/4/",
+									"protocol": "https",
+									"host": [
+										"ahmad8746",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"product",
+										"4",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get product by id Copy",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "Token b3c806da1c3bfcc904947c92d3db0c1109f1efbe",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "Authorization",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\":420,\r\n    \"currency\":\"USD\",\r\n    \"date\":\"2021-06-17 22:01:00\",\r\n    \"description\":\" to test bank api\",\r\n    \"category\":3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ahmad8746.herokuapp.com/product/1/",
+									"protocol": "https",
+									"host": [
+										"ahmad8746",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"product",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "deposit",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "Token ec4c51d9c9cf763add79b8e772afb5346cbdef5c",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmad8746.herokuapp.com/deposit/",
+							"protocol": "https",
+							"host": [
+								"ahmad8746",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"deposit",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deposit post",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "Token ec4c51d9c9cf763add79b8e772afb5346cbdef5c",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"deposit\": 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmad8746.herokuapp.com/deposit/",
+							"protocol": "https",
+							"host": [
+								"ahmad8746",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"deposit",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buy",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "Token ec4c51d9c9cf763add79b8e772afb5346cbdef5c",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"amountAvailable\": 1,\r\n        \"id\":1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmad8746.herokuapp.com/buy/",
+							"protocol": "https",
+							"host": [
+								"ahmad8746",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"buy",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "Token b1c598c42cc8f1e63269f69ce526bf30655389c2",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"deposit\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmad8746.herokuapp.com/reset/",
+							"protocol": "https",
+							"host": [
+								"ahmad8746",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"reset",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add user",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"123\",\r\n    \"password2\": \"123\",\r\n    \"role\": \"buyer\",\r\n    \"deposit\": 50,\r\n    \"username\": \"badmin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/user/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login with token",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "badmin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login with token Copy",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "badmin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ahmad8746.herokuapp.com/login/",
+							"protocol": "https",
+							"host": [
+								"ahmad8746",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "maze",
+			"item": [
+				{
+					"name": "post Maze",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "Token ec4c51d9c9cf763add79b8e772afb5346cbdef5c",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"walls\": \"C2,G1,A3,C2,E2,G2,C3,E3,B4,C4,E4,F4,G4,B5,E5,B6,D6,E6,G6,H6,B7,D7,G7,B8\",\r\n        \"gridsize\":\"8x8\",\r\n        \"entrance\":\"A2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmad8746.herokuapp.com/maze/",
+							"protocol": "https",
+							"host": [
+								"ahmad8746",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"maze",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get maze",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "Token ec4c51d9c9cf763add79b8e772afb5346cbdef5c",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"deposit\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmad8746.herokuapp.com/maze/",
+							"protocol": "https",
+							"host": [
+								"ahmad8746",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"maze",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get maze shortestpath",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "Token ec4c51d9c9cf763add79b8e772afb5346cbdef5c",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"deposit\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmad8746.herokuapp.com/maze/1/solution?steps=min",
+							"protocol": "https",
+							"host": [
+								"ahmad8746",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"maze",
+								"1",
+								"solution"
+							],
+							"query": [
+								{
+									"key": "steps",
+									"value": "min"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"happyUser\",\r\n    \"password\": \"iTk19!n\",\r\n    \"password2\": \"iTk19!n\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ahmad8746.herokuapp.com/user/",
+							"protocol": "https",
+							"host": [
+								"ahmad8746",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
